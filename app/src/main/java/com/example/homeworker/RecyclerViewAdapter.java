@@ -60,7 +60,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.img_name.setText(nImageNames.get(position));
         holder.mEditText.setTag(position);
         holder.mEditText.setText(mEditTextValues.get(position));
-
+        holder.population.setText(mEditTextValues.get(position));
     }
 
     @Override
@@ -89,11 +89,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                     if (mEditText.getTag() != null) {
                         mEditTextValues.set((int) mEditText.getTag(), charSequence.toString());
-                        population.setText(charSequence.toString());
                     }
                 }
             });
-            button.setOnClickListener(v -> population.setText(mEditText.getText().toString()));
+            button.setOnClickListener(v ->
+                    population.setText(mEditText.getText().toString()));
 
             img = itemView.findViewById(R.id.image);
             constraintLayout = itemView.findViewById(R.id.parent_layout);
