@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">homeworker</string>
+    <string name="kyrgyzstan">Kyrgyzstan</string>
+    <string name="set">set</string>
+    <string name="what_is_the_population">What is the population?</string>
+    <string name="population">population</string>
+    <string name="name">name</string>
+    <string name="result">result</string>
+    <string name="men">:::</string>
+    <string name="kel">:</string>
+    <string name="peoples">peoples</string>
+</resources>
